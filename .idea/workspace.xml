@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac6c0f54-e37f-4296-8971-63be575392f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Scripts/Box.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Scripts/Box.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Scripts/Interactable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Scripts/Interactable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Scripts/Inventory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Scripts/Inventory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Scripts/Item.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Scripts/Item.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Sprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Sprites/CloseButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Sprites/CloseButton.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Sprites/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Sprites/Icon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Sprites/Panel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Sprites/Panel.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Sprites/Placeholder01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Sprites/Placeholder01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Sprites/Placeholder02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Sprites/Placeholder02.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Sprites/crosshair.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Sprites/crosshair.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Materials/NavyGrid.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Materials/NavyGrid.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Materials/NavySmooth.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Materials/NavySmooth.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Materials/PinkGrid.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Materials/PinkGrid.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Materials/PinkSmooth.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Materials/PinkSmooth.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Materials/YellowGrid.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Materials/YellowGrid.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Materials/YellowSmooth.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Materials/YellowSmooth.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/BlockPrototype04x04x04.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/BlockPrototype04x04x04.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/CubePrototype02x02x02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/CubePrototype02x02x02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/CubePrototype04x04x04.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/CubePrototype04x04x04.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/CubePrototype08x08x08.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/CubePrototype08x08x08.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/FloorPrototype04x01x04.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/FloorPrototype04x01x04.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/FloorPrototype08x01x08.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/FloorPrototype08x01x08.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/FloorPrototype64x01x64.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/FloorPrototype64x01x64.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/HousePrototype16x16x24.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/HousePrototype16x16x24.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/JoinInnerPrototype01x06x01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/JoinInnerPrototype01x06x01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/JoinMidPrototype04x06x01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/JoinMidPrototype04x06x01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/JoinOuterPrototype02x06x02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/JoinOuterPrototype02x06x02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/PickupPrototype01x01x01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/PickupPrototype01x01x01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/PillarPrototype01x02x01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/PillarPrototype01x02x01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/PillarPrototype02x08x02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/PillarPrototype02x08x02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/PlatformPrototype02x01x02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/PlatformPrototype02x01x02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/PlatformPrototype04x01x04.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/PlatformPrototype04x01x04.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/PlatformPrototype08x01x08.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/PlatformPrototype08x01x08.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/RampPrototype04x02x02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/RampPrototype04x02x02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/StepsPrototype04x02x02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/StepsPrototype04x02x02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/WallPrototype08x08x01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Models/WallPrototype08x08x01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/BlockPrototype04x04x04.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/BlockPrototype04x04x04.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/CubePrototype02x02x02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/CubePrototype02x02x02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/CubePrototype04x04x04.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/CubePrototype04x04x04.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/CubePrototype08x08x08.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/CubePrototype08x08x08.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/FloorPrototype04x01x04.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/FloorPrototype04x01x04.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/FloorPrototype08x01x08.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/FloorPrototype08x01x08.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/FloorPrototype64x01x64.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/FloorPrototype64x01x64.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/HousePrototype16x16x24.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/HousePrototype16x16x24.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/JoinInnerPrototype01x06x01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/JoinInnerPrototype01x06x01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/JoinMidPrototype04x06x01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/JoinMidPrototype04x06x01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/JoinOuterPrototype02x06x02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/JoinOuterPrototype02x06x02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/PickupPrototype.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/PickupPrototype.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/PillarPrototype01x02x01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/PillarPrototype01x02x01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/PillarPrototype02x08x02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/PillarPrototype02x08x02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/PlatformPrototype02x01x02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/PlatformPrototype02x01x02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/PlatformPrototype04x01x04.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/PlatformPrototype04x01x04.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/PlatformPrototype08x01x08.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/PlatformPrototype08x01x08.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/RampPrototype04x02x02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/RampPrototype04x02x02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/StepsPrototype04x02x02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/StepsPrototype04x02x02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/WallPrototype08x08x01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Prefabs/WallPrototype08x08x01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Shaders/WorldCoordDiffuse.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Shaders/WorldCoordDiffuse.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/GridEmissive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/GridEmissive.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchMauveAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchMauveAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchNavyAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchNavyAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchNavyDarkAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchNavyDarkAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchOrangeAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchOrangeAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchPinkDAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchPinkDAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchTealAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchTealAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchTurquoiseAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchTurquoiseAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchWhiteAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchWhiteAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchYellowAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Standard Assets/Prototyping/Textures/SwatchYellowAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dielingo/Assets/Textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dielingo/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dielingo/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dielingo/Assets/_Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Dielingo/Assets/_Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dielingo/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Dielingo/Logs/Packages-Update.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dielingo/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dielingo/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dielingo/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Dielingo/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dielingo/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Dielingo/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dielingo/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Dielingo/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1476299553">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="log" value="1" />
+          <entry key="unity" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dielingo/Packages/manifest.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dielingo/Logs/Packages-Update.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Dielingo/Assets/_Scenes/Main.unity">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="1844" column="28" lean-forward="true" selection-start-line="1844" selection-start-column="28" selection-end-line="1844" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Dielingo/Packages/manifest.json" />
+        <option value="$PROJECT_DIR$/Dielingo/Logs/Packages-Update.log" />
+        <option value="$PROJECT_DIR$/Dielingo/Assets/_Scenes/Main.unity" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Dieolingo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dieolingo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dieolingo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dieolingo" type="462c0819:PsiDirectoryNode" />
+              <item name="Dielingo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dieolingo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dieolingo" type="462c0819:PsiDirectoryNode" />
+              <item name="Dielingo" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dieolingo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dieolingo" type="462c0819:PsiDirectoryNode" />
+              <item name="Dielingo" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
+              <item name="_Scenes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dieolingo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dieolingo" type="462c0819:PsiDirectoryNode" />
+              <item name="Dielingo" type="462c0819:PsiDirectoryNode" />
+              <item name="Logs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dieolingo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dieolingo" type="462c0819:PsiDirectoryNode" />
+              <item name="Dielingo" type="462c0819:PsiDirectoryNode" />
+              <item name="Packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac6c0f54-e37f-4296-8971-63be575392f9" name="Default Changelist" comment="" />
+      <created>1556543224584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556543224584</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Dielingo/Packages/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dielingo/Logs/Packages-Update.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dielingo/Assets/_Scenes/Main.unity">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="1844" column="28" lean-forward="true" selection-start-line="1844" selection-start-column="28" selection-end-line="1844" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
