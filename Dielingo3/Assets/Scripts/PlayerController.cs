@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        phoneLight.enabled = !phoneLight.enabled;
         inventory = GetComponent<Inventory>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -52,6 +51,10 @@ public class PlayerController : MonoBehaviour
         float xRot = Input.GetAxisRaw("Mouse Y");
 
         cameraRotation = new Vector3(xRot, 0f, 0f) * lookSensitivity;
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            phoneLight.enabled = !phoneLight.enabled;
+        }
     }
 
     //Performs Movement and Rotations
@@ -72,10 +75,6 @@ public class PlayerController : MonoBehaviour
         }
 
         //Turn Phone Light on and off
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            phoneLight.enabled = !phoneLight.enabled;
-        }
 
         //Checks to see if an item is detected
         if(Input.GetKeyDown(KeyCode.R))
