@@ -8,5 +8,5 @@ public class Item : ScriptableObject
     public int id;
     public string name;
     public string description;
-    public Texture2D invIcon;
+    public Texture2D inventoryIcon;
 }

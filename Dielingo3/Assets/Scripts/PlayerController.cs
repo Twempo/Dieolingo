@@ -19,16 +19,19 @@ public class PlayerController : MonoBehaviour
     public GameObject Phone;
     public Light phoneLight;
     public Camera cam;
+    public GameObject interactionText;
 
     private Inventory inventory;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        phoneLight.enabled = !phoneLight.enabled;
+        phoneLight.enabled = false;
+        interactionText.SetActive(false);
         inventory = GetComponent<Inventory>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        
     }
 
     void Update()
@@ -52,6 +55,12 @@ public class PlayerController : MonoBehaviour
         float xRot = Input.GetAxisRaw("Mouse Y");
 
         cameraRotation = new Vector3(xRot, 0f, 0f) * lookSensitivity;
+
+        //Display interaction text
+        if (InteractableDetection() != null)
+            interactionText.SetActive(true);
+        else
+            interactionText.SetActive(false);
     }
 
     //Performs Movement and Rotations
@@ -77,31 +86,47 @@ public class PlayerController : MonoBehaviour
             phoneLight.enabled = !phoneLight.enabled;
         }
 
-        //Checks to see if an item is detected
+        //Attempts to collect an item
         if(Input.GetKeyDown(KeyCode.R))
         {
             ItemCollection();
         }
     }
 
-    bool ItemCollection()
+    void ItemCollection()
+    {
+        Interactable interactable = InteractableDetection();
+        if (interactable != null)
+        {
+            float distance = Vector3.Distance(transform.position, interactable.transform.position);
+            if (distance < 3f)
+            {
+                if (interactable.isItem() == true)
+                {
+                    Item item = interactable.itemData;
+                    inventory.addItem(item);
+                    interactable.gameObject.SetActive(false);
+                    Debug.Log("Item Collected: " + item.name);
+                }
+                if(interactable.isDoor() == true)
+                {
+                    //does nothing yet
+                }
+            }
+        }
+    }
+
+    Interactable InteractableDetection()
     {
         int layerMask = 1 << 8;
         layerMask = ~layerMask;
         RaycastHit hit = new RaycastHit();
-        Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 10, layerMask);
-
-        if (hit.collider.gameObject.GetComponent<Interactable>() != null)
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 10, layerMask))
         {
-            float distance = Vector3.Distance(transform.position, hit.collider.gameObject.GetComponent<Interactable>().transform.position);
-            if (distance < 3f)
-            {
-                Interactable item = hit.collider.gameObject.GetComponent<Interactable>();
-                inventory.addItem(item);
-                hit.collider.gameObject.SetActive(false);
-                Debug.Log("Item Detected: " + item.name);
-            }
+            Interactable interactable = hit.collider.gameObject.GetComponent<Interactable>();
+            if (interactable != null && Vector3.Distance(transform.position, interactable.transform.position) < 3f)
+                return interactable;
         }
-        return false;
+        return null;
     }
 }

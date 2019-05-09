@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    List<Interactable> inv = new List<Interactable>();
+    List<Item> inv = new List<Item>();
 
-    public void addItem(Interactable obj)
+    public void addItem(Item item)
     {
-        inv.Add(obj);
+        inv.Add(item);
         Debug.Log(inv.Count);
     }
 }

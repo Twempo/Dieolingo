@@ -11,5 +11,14 @@ public class Interactable : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, radius);
     }
 
-
+    public bool isItem()
+    {
+        if (itemData != null)
+            return true;
+        return false;
+    }
+    public bool isDoor()
+    {
+        return false;
+    }
 }
